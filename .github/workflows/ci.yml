@@ -1,3 +1,9 @@
 name: Lint and Build
 
 on: [push, pull_request]
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
