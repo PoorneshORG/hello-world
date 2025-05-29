@@ -19,6 +19,8 @@ jobs:
     - name: test
       run: echo "This is a test job"
       shell: bash
+    - name: Checkout repository
+      uses: actions/checkout@v4
     - name: Use Composite Action
       uses: ./.github/actions/composite
       with:
