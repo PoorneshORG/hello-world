@@ -1,0 +1,28 @@
+name: 'Checkout and Lint'
+description: 'Composite action to checkout code and run lint for a JavaScript project'
+
+inputs:
+  node-version:
+    description: 'Node.js version to use'
+    required: false
+    default: '18'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+      shell: bash
+
+    - name: Run linter
+      run: npm run lint
+      shell: bash
