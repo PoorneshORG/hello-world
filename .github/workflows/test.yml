@@ -1,6 +1,8 @@
 name: Composite Action Workflow
 
-on: [push, pull_request]
+on:
+  issues:
+    types: [opened, edited, labeled, unlabeled, closed, reopened]
 
 jobs:
   lint-build:
