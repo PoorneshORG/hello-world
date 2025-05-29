@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-        uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: Use Composite Action
-        uses: ./.github/actions/composite
-        with:
+      uses: ./.github/actions/composite
+      with:
         node-version: '18'
