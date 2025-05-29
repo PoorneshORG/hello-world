@@ -11,7 +11,7 @@ jobs:
 
       - name: Use Composite Action
         #uses: ./.github/actions/composite
-        uses: poornesh.thatturi/actionshub/composite/lint and test@testactions
+        uses: poornesh.thatturi/actionshub@testactions
         with:
           node-version: '18'
 
