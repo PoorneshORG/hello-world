@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/PoorneshORG/hello-world/issues"
   },
-  "homepage": "https://github.com/PoorneshORG/hello-world#readme"
+  "homepage": "https://github.com/PoorneshORG/hello-world#readme",
+  "devDependencies": {
+    "eslint": "^9.27.0"
+  }
 }
