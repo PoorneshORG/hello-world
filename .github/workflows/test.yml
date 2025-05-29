@@ -13,3 +13,11 @@ jobs:
       uses: ./.github/actions/composite
       with:
         node-version: '18'
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: echo "This is a test job"
+      shell: bash
+      
+  
