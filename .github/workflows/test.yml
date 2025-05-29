@@ -1,0 +1,12 @@
+name: Lint and Build
+
+on: [push, pull_request]
+
+jobs:
+  lint-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Composite Action
+        uses: ./github/actions/composite
+        with:
+          node-version: '18'
