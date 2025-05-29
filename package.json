@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/PoorneshORG/hello-world#readme",
   "devDependencies": {
+    "@eslint/js": "^9.27.0",
     "eslint": "^9.27.0"
   }
 }
