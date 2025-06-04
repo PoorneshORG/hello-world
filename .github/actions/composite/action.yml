@@ -6,8 +6,7 @@ inputs:
     description: 'Node.js version to use'
     required: false
     default: '18'
-AWS_ACCESS_KEY_ID="AKIAIOSFODNN7EXAMPLE",
-AWS_SECRET_ACCESS_KEY="wJalrXUtnFEMI/K7MDENG/bPxRfiCyEXAMPLEKEY",
+
 runs:
   using: 'composite'
   steps:
