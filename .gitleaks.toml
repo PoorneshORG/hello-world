@@ -1,0 +1,23 @@
+title = "My GitLeaks Config"
+
+[[rules]]
+description = "AWS Access Key"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["key", "aws"]
+
+[[rules]]
+description = "AWS Secret Key"
+regex = '''(?i)aws(.{0,20})?['\"][0-9a-zA-Z\/+]{40}['\"]'''
+tags = ["key", "aws"]
+
+[[rules]]
+description = "Private RSA Key"
+regex = '''-----BEGIN RSA PRIVATE KEY-----'''
+tags = ["key", "private", "rsa"]
+
+[[rules]]
+description = "Generic API Key"
+regex = '''api_key\s*=\s*['"][a-z0-9]{32,}['"]'''
+tags = ["key", "generic"]
+
+# Add more rules as needed...
